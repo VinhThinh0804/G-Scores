@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    container_name: gscore_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postgres
+    ports:
+      - '2010:5432'
+    volumes:
+      - db_data_gscore:/var/lib/postgresql/data
+volumes:
+  db_data_gscore:
