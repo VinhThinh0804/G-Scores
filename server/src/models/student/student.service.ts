@@ -1,10 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { CreateStudentDto } from './dto/create-student.dto';
-import { UpdateStudentDto } from './dto/update-student.dto';
 import { PrismaService } from 'src/common/prisma/prisma.service';
 import * as fs from 'fs';
 import * as csv from 'csv-parser';
-import { Student } from '@prisma/client';
 
 @Injectable()
 export class StudentService {

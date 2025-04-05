@@ -1,10 +1,12 @@
 # G-Scores Project
 
 This project consists of two main parts:
+
 1. **Client**: A React-based frontend application.
 2. **Server**: A NestJS-based backend application.
 
 ## Prerequisites
+
 - Node.js (v16 or higher)
 - npm or yarn
 - Docker (for running the database)
@@ -15,19 +17,23 @@ This project consists of two main parts:
 ## Setup Instructions
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/your-repo/G-Scores.git
 cd G-Scores
 ```
 
 ### 2. Install Dependencies
+
 #### Client
+
 ```bash
 cd client
 npm install
 ```
 
 #### Server
+
 ```bash
 cd server
 npm install
@@ -38,6 +44,7 @@ npm install
 ## Running the Project Locally
 
 ### 1. Start the Database with Docker
+
 1. Ensure Docker is running on your machine.
 2. Navigate to the `server` directory:
    ```bash
@@ -49,6 +56,7 @@ npm install
    ```
 
 ### 2. Start the Server
+
 1. Navigate to the `server` directory (if not already there):
    ```bash
    cd server
@@ -57,8 +65,11 @@ npm install
    ```bash
    npm run start:dev
    ```
+3. After the server is running, open your browser and visit:
+   👉 http://localhost:3000/seed
 
 ### 3. Start the Client
+
 1. Navigate to the `client` directory:
    ```bash
    cd client
@@ -71,12 +82,14 @@ npm install
 ---
 
 ## Accessing the Application
+
 - **Client**: Open your browser and go to `http://localhost:5173`.
 - **Server**: The API is available at `http://localhost:3000`.
 
 ---
 
 ## Additional Notes
+
 - Ensure that the `.env` files are properly configured for both `client` and `server`.
 - To stop the database, run:
   ```bash
